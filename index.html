@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            color: #fff;
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .header, .footer, .middle {
+            display: flex;
+            padding: 20px 0;
+        }
+        .header, .footer {
+            background-color: #000;
+            height: 60px;
+        }
+        .header {
+            justify-content: space-between;
+        }
+        .middle {
+            background-color: #666;
+            height: 400px;
+        }
+        .footer {
+            justify-content: space-around;
+        }
+
+        .logo, .search, .tools, .nav {
+            background-color: #B7B7B7;
+            border: 1px solid #fff;
+            margin: 0 20px;
+            line-height: 60px;
+        }
+        .logo {
+            flex: 1;
+        }
+        .search {
+            flex: 2;
+        }
+        .tools {
+            flex: 1;
+        }
+        .nav {
+            flex: 1;
+        }
+
+        .images, .side-list {
+            border: 1px solid #000;
+            margin: 0 20px;
+            line-height: 400px;
+        }
+        .images {
+            background-color: #D1E0E3;
+            flex: 3;
+        }
+        .side-list {
+            background-color: #D8D3E8;
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">Logo</div>
+        <div class="search">Search</div>
+        <div class="tools">Tools</div>
+    </div>
+    <div class="middle">
+        <div class="images">Images</div>
+        <div class="side-list">Side List</div>
+    </div>
+    <div class="footer">
+        <div class="nav">Nav1</div>
+        <div class="nav">Nav2</div>
+        <div class="nav">Nav3</div>
+        <div class="nav">Nav4</div>
+    </div>
+</body>
+</html>
